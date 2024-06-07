@@ -60,5 +60,3 @@ function downloadImage() {
     link.download = img.src;
     link.click();
 }
-
-// Add more JavaScript from the original file as needed
