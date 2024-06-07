@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pour yourself a nice cup of tea, relax, and enjoy a bit of humour and other delightful content. This website will fetch images from the subreddits you specify.">
+    <meta name="keywords" content="reddit,image,scraper,cozy,fun">
+    <link rel="icon" type="image/x-icon" href="https://reddipic.netfy.org/eeeee.ico">
+    <title>Image Sourcer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav></nav>
+    </header>
+    <h1>-Reddipic-</h1>
+    <div class="login" id="e">
+        <button class="button at" onclick="toggleAtmosphere()" style="display: none;">Atmosphere</button>
+        <div class="hide" style="display: none;">
+            <button class="button rain">rain</button>
+            <button class="button forest">forest</button>
+            <button class="button sea">sea</button>
+            <button class="button dark">dark</button>
+            <button class="button water">water</button>
+            <button class="button none">none</button>
+        </div>
+        <audio id="audio" loop>
+            <source src="rain.mp3" type="audio/mp3">
+        </audio>
+        <audio id="audio2" loop>
+            <source src="forest.mp3" type="audio/mp3">
+        </audio>
+        <audio id="audio4" loop>
+            <source src="sea.mp3" type="audio/mp3">
+        </audio>
+        <audio id="audio5" loop>
+            <source src="dark.mp3" type="audio/mp3">
+        </audio>
+        <audio id="audio6" loop>
+            <source src="water.mp3" type="audio/mp3">
+        </audio>
+        <button class="button th" style="margin: 15px; display: block;" onclick="toggleThemes()">Themes</button>
+        <div class="hide2" style="display: flex;">
+            <button class="button autumn">Autumn</button><br>
+            <button class="button leafy">Heaven</button>
+        </div>
+    </div>
+    <div class="login">
+        <input type="search" placeholder="enter subreddit" class="us">
+        <div class="fle">
+            <button class="button find">Find!</button>
+            <button class="button rapid">Random Find!</button>
+            <button class="button ee" style="transition: all .4s;" onclick="toggleFilters()">Image Filter</button>
+            <div class="hide3 filters">
+                <button class="buttonx grey" onclick="applyFilter('grayscale(100%)')">greyscale</button>
+                <button class="buttonx inv" onclick="applyFilter('invert(100%)')">invert</button>
+                <button class="buttonx blur" onclick="applyFilter('blur(4px)')">blur</button>
+                <button class="buttonx sep" onclick="applyFilter('sepia(100%)')">sepia</button>
+                <button class="buttonx satu" onclick="applyFilter('saturate(7)')">saturate</button>
+                <button class="buttonx bri" onclick="applyFilter('brightness(50%)')">dimmess</button>
+                <button class="buttonx contrast" onclick="applyFilter('contrast(180%)')">contrast</button>
+                <button class="button no" onclick="applyFilter('none')">None</button>
+            </div>
+        </div>
+        <h1 class="heading">Reddit image scraper</h1>
+        <h1 class="sub" style="display: block;">r/humour</h1>
+        <img src="cc1.png" alt="no subreddit found / please try again later" class="img" style="transition: filter .4s;">
+        <h1 class="author">@Deathbringer98</h1><br>
+        <button class="button download" onclick="downloadImage()">Download</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
