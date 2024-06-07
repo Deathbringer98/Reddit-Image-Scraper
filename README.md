@@ -1,7 +1,9 @@
 # Reddit-Image-Scraper
 This web app scrapes images from Reddit.
 
-Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)
+# Work in Progress
+This project is currently under development and will receive periodic updates until its completion.
+# Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)
 
 You are free to:
 
