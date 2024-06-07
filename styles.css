@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    box-sizing: border-box;
+    user-select: none;
+    background-image: url('g.gif');
+    background-repeat: repeat-y;
+    background-size: 100%;
+    background-color: greenyellow;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    color: rgb(255, 245, 234);
+    text-align: center;
+    font-size: 65px;
+    font-family: 'Poppins';
+    text-shadow: 5px 6px 10px rgb(46, 17, 0);
+}
+
+.author {
+    font-size: 20px;
+    color: orangered;
+}
+
+.sub {
+    font-size: 18px;
+    color: rgb(255, 110, 58);
+}
+
+.img {
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+    box-shadow: 0px 0px 15px yellow;
+    margin: 50px;
+    transition: transform .2s;
+}
+
+.button {
+    font-size: 20px;
+    background-image: linear-gradient(to bottom right, rgb(252, 157, 113), rgb(255, 160, 52));
+    border-radius: 5px;
+    border: none;
+    padding: 5px 27px;
+    color: rgb(53, 10, 2);
+    box-shadow: 0px 0px 15px rgb(255, 94, 0);
+    transition: font-size 0.1s, transform 0.4s;
+}
+
+.buttonx {
+    font-size: 18px;
+    background-image: linear-gradient(to bottom right, #ff7b53, hsl(17, 98%, 55%));
+    border-radius: 5px;
+    border: none;
+    padding: 5px 27px;
+    color: rgb(53, 10, 2);
+    box-shadow: 0px 0px 15px rgb(255, 94, 0);
+    transition: all 0.1s;
+}
+
+/* Add more CSS from the original file as needed */
